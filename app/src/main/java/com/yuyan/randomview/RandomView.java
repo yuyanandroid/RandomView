@@ -11,9 +11,6 @@ import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 
-/**
- * Created by wutongyu on 18/10/27.
- */
 
 public class RandomView extends AppCompatTextView implements View.OnClickListener{
     private OnRemoveListener removeListener;

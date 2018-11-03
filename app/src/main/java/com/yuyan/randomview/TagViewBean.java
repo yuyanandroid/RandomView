@@ -1,8 +1,5 @@
 package com.yuyan.randomview;
 
-/**
- * Created by wutongyu on 18/10/24.
- */
 
 public class TagViewBean {
     private int x;
