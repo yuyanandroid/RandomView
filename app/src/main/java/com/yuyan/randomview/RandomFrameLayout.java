@@ -16,7 +16,7 @@ public class RandomFrameLayout extends FrameLayout {
     private List<TagViewBean> tagViews;
     private TagViewBean tagBean;
     private MyHandler mHandler = new MyHandler();
-    private int term, termX, termY;
+    private int termX, termY;
     private List<RandomView> textList;
     private OnRemoveListener onRemoveListener;
 
@@ -28,8 +28,8 @@ public class RandomFrameLayout extends FrameLayout {
         super(context, attributes);
         tagViews = Collections.synchronizedList(new ArrayList<TagViewBean>());
         textList = new ArrayList<>();
-        termX = 50;
-        termY = 50;
+        termX = 80;
+        termY = 80;
     }
 
     public RandomFrameLayout(Context context, AttributeSet attributeSet, int styles) {

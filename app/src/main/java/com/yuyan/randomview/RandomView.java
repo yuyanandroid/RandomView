@@ -16,18 +16,18 @@ public class RandomView extends AppCompatTextView implements View.OnClickListene
     private OnRemoveListener removeListener;
     public RandomView(Context context) {
         super(context);
-        init("测试");
+        init();
     }
 
     public RandomView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        init("測試");
+        init();
     }
 
     public RandomView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
-    public void init(String text) {
+    public void init() {
         Drawable drawable = ContextCompat.getDrawable(getContext(), R.mipmap.ic_img);
         drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());//第一0是距左边距离，第二0是距上边距离，40分别是长宽
         setCompoundDrawables(null, drawable, null, null);
@@ -37,7 +37,6 @@ public class RandomView extends AppCompatTextView implements View.OnClickListene
         setGravity(Gravity.CENTER);
         startAnimation(animation());
         setOnClickListener(this);
-        super.setText(text);
     }
 
     private TranslateAnimation animation() {
